@@ -1,3 +1,10 @@
+// 로그인 방법중  SNS 6종 로그인
+Cypress.Commands.add("snsClickCheck", (labels) => {
+  labels.forEach((label) => {
+    cy.get(`button[aria-label="${label}"]`).click();
+  });
+});
+
 Cypress.Commands.add("checkPageLoadAndComponents", () => {
   // 엘리스 로고 확인
   cy.get(
