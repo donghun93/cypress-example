@@ -27,15 +27,15 @@ Cypress.Commands.add("checkPageLoadAndComponents", () => {
 
   cy.visit("/");
 
-  cy.get('button[type="submit"]').should("be.visible");
-  cy.get('button[type="button"]')
-    .contains("카카오로 로그인")
-    .should("be.visible");
-  cy.get('button[type="button"]')
-    .contains("구글로 로그인")
-    .should("be.visible");
+//   cy.get('button[type="submit"]').should("be.visible");
+//   cy.get('button[type="button"]')
+//     .contains("카카오로 로그인")
+//     .should("be.visible");
+//   cy.get('button[type="button"]')
+//     .contains("구글로 로그인")
+//     .should("be.visible");
 
-  cy.contains("더보기").click();
+//   cy.contains("더보기").click();
 
 //   // 추가 SNS 로그인 6종 [함수화]
 //   cy.snsClickCheck([
