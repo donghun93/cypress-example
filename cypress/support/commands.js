@@ -16,8 +16,8 @@ Cypress.Commands.add("checkPageLoadAndComponents", () => {
   // 컴포넌트 확인 (주요 버튼)
   cy.get('input[name="loginId"]').should("be.visible");
   cy.get('input[name="password"]').should("be.visible");
-//   cy.contains("비밀번호를 잊어버리셨나요?").click();
-  cy.get(".MuiStack-root > .MuiTypography-root").click();
+  cy.contains("비밀번호를 잊어버리셨나요?").click();
+  
 
 
   cy.url().should(
