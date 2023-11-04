@@ -7,15 +7,15 @@ Cypress.Commands.add("snsClickCheck", (labels) => {
 
 Cypress.Commands.add("checkPageLoadAndComponents", () => {
   // 엘리스 로고 확인
-//   cy.get(
-//     'img[src="https://cdn-front-door.elice.io/accounts/static/media/elice_logo.3da193278ac05deb.png"]'
-//   )
-//     .should("have.attr", "alt", "header_logo")
-//     .should("be.visible");
+  cy.get(
+    'img[src="https://cdn-front-door.elice.io/accounts/static/media/elice_logo.3da193278ac05deb.png"]'
+  )
+    .should("have.attr", "alt", "header_logo")
+    .should("be.visible");
 
   // 컴포넌트 확인 (주요 버튼)
-//   cy.get('input[name="loginId"]').should("be.visible");
-//   cy.get('input[name="password"]').should("be.visible");
+  cy.get('input[name="loginId"]').should("be.visible");
+  cy.get('input[name="password"]').should("be.visible");
 //    cy.contains("비밀번호를 잊어버리셨나요?").click();
    cy.get(".MuiStack-root > .MuiTypography-root").click();
 
@@ -27,15 +27,15 @@ Cypress.Commands.add("checkPageLoadAndComponents", () => {
 
   cy.visit("/");
 
-//   cy.get('button[type="submit"]').should("be.visible");
-//   cy.get('button[type="button"]')
-//     .contains("카카오로 로그인")
-//     .should("be.visible");
-//   cy.get('button[type="button"]')
-//     .contains("구글로 로그인")
-//     .should("be.visible");
+  cy.get('button[type="submit"]').should("be.visible");
+  cy.get('button[type="button"]')
+    .contains("카카오로 로그인")
+    .should("be.visible");
+  cy.get('button[type="button"]')
+    .contains("구글로 로그인")
+    .should("be.visible");
 
-//   cy.contains("더보기").click();
+  cy.contains("더보기").click();
 
 //   // 추가 SNS 로그인 6종 [함수화]
 //   cy.snsClickCheck([
